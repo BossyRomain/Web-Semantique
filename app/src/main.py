@@ -1,64 +1,61 @@
-import os
-import json
+"""
+Programme principal de l'application.
+
+Ce programme permet de :
+- Récupérer les données de l'API OMDB,
+- Les sauvegarder dans un fichier JSON,
+- Les ajouter à un graphe RDF,
+- Sauvegarder ce graphe dans un fichier Turtle,
+- Sérialiser les triplets en format N-Triples,
+- Les insérer dans un triplestore Fuseki.
+"""
+
 import requests
 
-from rdflib import Graph, URIRef, Literal, Namespace
-from rdflib.namespace import RDF, RDFS
-from SPARQLWrapper import SPARQLWrapper, POST
+from graph_rdf import add_movies_from_json_api_to_rdf_graph, get_rdf_graph, serialized_rdf_n_triples
+from fuseki import insert_n_triples_data_in_triplestore
+from save_turtle import save_turtle_rdf_graph
+from save_json import save_json_data
+from conf import url_omdb_api
 
-# Création des dossiers s'ils n'existent pas
-os.makedirs("../json", exist_ok=True)
-os.makedirs("../turtle", exist_ok=True)
+######################
+#      OMDB API      #
+######################
 
-# Configuration de l'API et du mot-clé
-api_key = "eaf9aada"
-keyword = "Harry"  # Mot-clé de recherche
-url = f"http://www.omdbapi.com/?apikey={api_key}&s={keyword}&page=1"
+# Récupérer les données de l'API OMDB
+response_omdb_api = requests.get(url_omdb_api)
 
-# Récupération des données
-response = requests.get(url)
-data = response.json()
+######################
+#      JSON FILE     #
+######################
 
-# Placer le fichier json dans le dossier app/json
-with open("../json/films_page1.json", "w") as file:
-    json.dump(data, file)
+# Sauvegarder les données dans un fichier json
+json_result_api = save_json_data(response_omdb_api)
 
-# Initialisation du graphe RDF
-g = Graph()
+######################
+#      GRAPH RDF     #
+######################
 
-# Choix de l'ontologie (ici : schema.org)
-schema = Namespace("http://schema.org/")
+# Ajouter les films du fichier json au graphe RDF
+add_movies_from_json_api_to_rdf_graph(json_result_api)
 
-# Conversion en triplets RDF
-if data["Response"] == "True":
-    for movie in data["Search"]:
-        movie_uri = URIRef(f"http://film.org/films/{movie['imdbID']}")
-        g.add((movie_uri, RDF.type, schema.Movie))
-        g.add((movie_uri, schema.name, Literal(movie["Title"])))
-        g.add((movie_uri, schema.releaseDate, Literal(movie["Year"])))
-        g.add((movie_uri, schema.director, Literal(movie["Poster"])))
+######################
+#     TURTLE FILE    #
+######################
 
-# Sauvegarder en format Turtle
-g.serialize("../turtle/films_page1.ttl", format="turtle")
+# Sauvegarder le graphe RDF dans un fichier Turtle
+save_turtle_rdf_graph(get_rdf_graph())
 
-# Sérialiser les triplets en format N-Triples pour l'insertion SPARQL
-triples_data = g.serialize(format="nt")
+######################
+#    N-TRIPLES RDF   #
+######################
 
-# Configuration de Fuseki
-fuseki_url = "http://localhost:3030/films/update"
+# Sérialiser les triplets en format N-Triples
+n_triples_data = serialized_rdf_n_triples()
 
-# Préparer la requête SPARQL pour insérer les triplets
-sparql = SPARQLWrapper(fuseki_url)
-sparql.setMethod(POST)
-sparql.setQuery(f"""
-INSERT DATA {{
-  {triples_data}
-}}
-""")
+######################
+#       FUSEKI       #
+######################
 
-# Exécuter la requête pour insérer les données
-try:
-    sparql.query()
-    print("Triplets RDF ajoutés au triplestore avec succès.")
-except Exception as e:
-    print("Erreur lors de l'insertion des triplets RDF :", e)
+# Insérer les triplets RDF dans le triplestore Fuseki
+insert_n_triples_data_in_triplestore(n_triples_data)

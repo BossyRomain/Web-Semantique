@@ -1,12 +1,17 @@
 #!/bin/bash
 
-# Executer l'application python
 cd app/src/
-python main.py
 
-# Affichage console
 echo ""
 echo "#######################################################"
-echo "#         L'application Python est lancée !!!         #"
+echo "#        Lancement de l'application Python...         #"
+echo "#######################################################"
+echo ""
+
+python main.py
+
+echo ""
+echo "#######################################################"
+echo "#          Fin de l'application Python...             #"
 echo "#######################################################"
 echo ""

@@ -1,0 +1,52 @@
+@prefix schema1: <http://schema.org/> .
+
+<http://projet-web-sem-cinema.org/movies/tt0066999> a schema1:Movie ;
+    schema1:image "https://m.media-amazon.com/images/M/MV5BYzNmOWVjN2ItMTQzOS00MTI4LTgxZDItMmZjNTVlMjY5Mjc1XkEyXkFqcGc@._V1_SX300.jpg" ;
+    schema1:name "Dirty Harry" ;
+    schema1:releaseDate "1971" .
+
+<http://projet-web-sem-cinema.org/movies/tt0098635> a schema1:Movie ;
+    schema1:image "https://m.media-amazon.com/images/M/MV5BMjE0ODEwNjM2NF5BMl5BanBnXkFtZTcwMjU2Mzg3NA@@._V1_SX300.jpg" ;
+    schema1:name "When Harry Met Sally..." ;
+    schema1:releaseDate "1989" .
+
+<http://projet-web-sem-cinema.org/movies/tt0241527> a schema1:Movie ;
+    schema1:image "https://m.media-amazon.com/images/M/MV5BNTU1MzgyMDMtMzBlZS00YzczLThmYWEtMjU3YmFlOWEyMjE1XkEyXkFqcGc@._V1_SX300.jpg" ;
+    schema1:name "Harry Potter and the Sorcerer's Stone" ;
+    schema1:releaseDate "2001" .
+
+<http://projet-web-sem-cinema.org/movies/tt0295297> a schema1:Movie ;
+    schema1:image "https://m.media-amazon.com/images/M/MV5BNGJhM2M2MWYtZjIzMC00MDZmLThkY2EtOWViMDhhYjRhMzk4XkEyXkFqcGc@._V1_SX300.jpg" ;
+    schema1:name "Harry Potter and the Chamber of Secrets" ;
+    schema1:releaseDate "2002" .
+
+<http://projet-web-sem-cinema.org/movies/tt0304141> a schema1:Movie ;
+    schema1:image "https://m.media-amazon.com/images/M/MV5BMTY4NTIwODg0N15BMl5BanBnXkFtZTcwOTc0MjEzMw@@._V1_SX300.jpg" ;
+    schema1:name "Harry Potter and the Prisoner of Azkaban" ;
+    schema1:releaseDate "2004" .
+
+<http://projet-web-sem-cinema.org/movies/tt0330373> a schema1:Movie ;
+    schema1:image "https://m.media-amazon.com/images/M/MV5BMTI1NDMyMjExOF5BMl5BanBnXkFtZTcwOTc4MjQzMQ@@._V1_SX300.jpg" ;
+    schema1:name "Harry Potter and the Goblet of Fire" ;
+    schema1:releaseDate "2005" .
+
+<http://projet-web-sem-cinema.org/movies/tt0373889> a schema1:Movie ;
+    schema1:image "https://m.media-amazon.com/images/M/MV5BYWJmM2M1YzItMjY1Ni00YzRmLTg5YWYtNDFmNTJjNzQ0ODkyXkEyXkFqcGc@._V1_SX300.jpg" ;
+    schema1:name "Harry Potter and the Order of the Phoenix" ;
+    schema1:releaseDate "2007" .
+
+<http://projet-web-sem-cinema.org/movies/tt0417741> a schema1:Movie ;
+    schema1:image "https://m.media-amazon.com/images/M/MV5BNzU3NDg4NTAyNV5BMl5BanBnXkFtZTcwOTg2ODg1Mg@@._V1_SX300.jpg" ;
+    schema1:name "Harry Potter and the Half-Blood Prince" ;
+    schema1:releaseDate "2009" .
+
+<http://projet-web-sem-cinema.org/movies/tt0926084> a schema1:Movie ;
+    schema1:image "https://m.media-amazon.com/images/M/MV5BMTQ2OTE1Mjk0N15BMl5BanBnXkFtZTcwODE3MDAwNA@@._V1_SX300.jpg" ;
+    schema1:name "Harry Potter and the Deathly Hallows: Part 1" ;
+    schema1:releaseDate "2010" .
+
+<http://projet-web-sem-cinema.org/movies/tt1201607> a schema1:Movie ;
+    schema1:image "https://m.media-amazon.com/images/M/MV5BOTA1Mzc2N2ItZWRiNS00MjQzLTlmZDQtMjU0NmY1YWRkMGQ4XkEyXkFqcGc@._V1_SX300.jpg" ;
+    schema1:name "Harry Potter and the Deathly Hallows: Part 2" ;
+    schema1:releaseDate "2011" .
+
