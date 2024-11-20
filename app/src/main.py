@@ -12,7 +12,7 @@ Ce programme permet de :
 
 import requests
 
-from graph_rdf import add_movies_from_json_api_to_rdf_graph, get_rdf_graph, serialized_rdf_n_triples
+from graph_rdf import add_movies_from_json_api_to_rdf_graph, get_rdf_graph, serialized_rdf_n_triples, add_movies_crews_from_json_api_to_rdf_graph
 from fuseki import insert_n_triples_data_in_triplestore
 from save_triplet import save_triples_rdf_graph
 from save_turtle import save_turtle_rdf_graph
@@ -39,6 +39,9 @@ json_result_api = save_json_data(response_omdb_api)
 
 # Ajouter les films du fichier json au graphe RDF
 add_movies_from_json_api_to_rdf_graph(json_result_api)
+
+# Ajouter les membres des équipes des films au graphe RDF
+add_movies_crews_from_json_api_to_rdf_graph(json_result_api)
 
 ######################
 #     TURTLE FILE    #

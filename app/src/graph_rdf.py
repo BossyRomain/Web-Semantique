@@ -5,7 +5,8 @@ Module de création d'un graphe RDF pour stocker les données d'une ontologie
 from rdflib import Graph, URIRef, Literal, Namespace
 from rdflib.namespace import RDF
 
-from conf import ontologie_schema_org_movie, ontologie_schema_prefix_movie, ontologie_schema_org_creative_work, ontologie_schema_prefix_creative_work, ontologie_schema_org_thing, ontologie_schema_prefix_thing
+from conf import ontologie_schema_org_movie, ontologie_schema_prefix_movie, ontologie_schema_org_creative_work, ontologie_schema_prefix_creative_work, ontologie_schema_org_thing, ontologie_schema_prefix_thing, url_themoviedb_api, onthologie_schema_org_person, onthologie_schema_prefix_person
+from api import get_movie_crew
 
 # Initialisation du graphe RDF
 graph = Graph()
@@ -14,11 +15,13 @@ graph = Graph()
 schema_movie = Namespace(ontologie_schema_org_movie)
 schema_creative_work = Namespace(ontologie_schema_org_creative_work)
 schema_thing = Namespace(ontologie_schema_org_thing)
+schema_person = Namespace(onthologie_schema_org_person)
 
 # Liaison des préfixes aux ontologies (pour passer de 'http://schema.org/Movie/' à 'schema-movie')
 graph.bind(ontologie_schema_prefix_movie, schema_movie)
 graph.bind(ontologie_schema_prefix_creative_work, schema_creative_work)
 graph.bind(ontologie_schema_prefix_thing, schema_thing)
+graph.bind(onthologie_schema_prefix_person, schema_person)
 
 def get_rdf_graph():
     """
@@ -55,6 +58,32 @@ def add_movie_to_rdf_graph(movie):
 
     # Ajouter l'affiche du film
     graph.add((movie_uri, schema_creative_work.thumbnailUrl, Literal(movie["Poster"])))
+
+
+def add_movies_crews_from_json_api_to_rdf_graph(json_result_api):
+    for movie in json_result_api["Search"]:
+        add_movie_crew_to_rdf(movie)
+
+
+def add_movie_crew_to_rdf(movie):
+    """
+    Ajoute l'équipe d'un film dans le graphe RDF
+    """
+    for person in get_movie_crew(movie):
+        add_person_to_rdf(person)
+
+
+def add_person_to_rdf(person):
+    """
+    Ajoute une personne dans le graphe RDF
+    """
+    person_uri = URIRef(f"{url_themoviedb_api}person/{person['id']}")
+
+    graph.add((person_uri, schema_person.name, person['name']))
+
+    graph.add((person_uri, schema_person.birthDate, person['birthday']))
+
+    graph.add((person_uri, schema_person.birthPlace, person['place_of_birth']))
 
 
 def serialized_rdf_n_triples():

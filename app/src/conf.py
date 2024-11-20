@@ -23,6 +23,9 @@ ontologie_schema_prefix_creative_work = "schema-creative-work"
 ontologie_schema_org_thing = "https://schema.org/Thing/"
 ontologie_schema_prefix_thing = "schema-thing"
 
+onthologie_schema_org_person = "https://schema.org/Person"
+onthologie_schema_prefix_person = "schema-person"
+
 # Fuseki
 fuseki_url = "http://localhost:3030/movies/update"
 
@@ -38,3 +41,12 @@ page_nb = 2
 
 # Rechercher les films à la "page" spécifiée avec "keyword" dans le titre
 url_omdb_api = f"http://www.omdbapi.com/?apikey={omdb_api_key}&s={key_word}&page={page_nb}"
+
+######################
+#  The Movie DB API  #
+######################
+
+themovedb_api_key = "cc3adef3826285c96e65cbd79fffa82e"
+
+# Rechercher les personnes qui ont travaillé sur le film
+url_themoviedb_api = f'https://api.themoviedb.org/3/'
