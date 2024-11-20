@@ -1,42 +1,43 @@
-@prefix schema-movie: <https://schema.org/Movie> .
+@prefix schema-creative-work: <https://schema.org/CreativeWork/> .
+@prefix schema-thing: <https://schema.org/Thing/> .
 
-<http://projet-web-sem-cinema.org/movies/tt0066999> schema-movie:image "https://m.media-amazon.com/images/M/MV5BYzNmOWVjN2ItMTQzOS00MTI4LTgxZDItMmZjNTVlMjY5Mjc1XkEyXkFqcGc@._V1_SX300.jpg" ;
-    schema-movie:name "Dirty Harry" ;
-    schema-movie:releaseDate "1971" .
+<http://projet-web-sem-cinema.org/movies/tt0066999> schema-creative-work:datePublished "1971" ;
+    schema-creative-work:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BYzNmOWVjN2ItMTQzOS00MTI4LTgxZDItMmZjNTVlMjY5Mjc1XkEyXkFqcGc@._V1_SX300.jpg" ;
+    schema-thing:name "Dirty Harry" .
 
-<http://projet-web-sem-cinema.org/movies/tt0098635> schema-movie:image "https://m.media-amazon.com/images/M/MV5BMjE0ODEwNjM2NF5BMl5BanBnXkFtZTcwMjU2Mzg3NA@@._V1_SX300.jpg" ;
-    schema-movie:name "When Harry Met Sally..." ;
-    schema-movie:releaseDate "1989" .
+<http://projet-web-sem-cinema.org/movies/tt0098635> schema-creative-work:datePublished "1989" ;
+    schema-creative-work:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMjE0ODEwNjM2NF5BMl5BanBnXkFtZTcwMjU2Mzg3NA@@._V1_SX300.jpg" ;
+    schema-thing:name "When Harry Met Sally..." .
 
-<http://projet-web-sem-cinema.org/movies/tt0241527> schema-movie:image "https://m.media-amazon.com/images/M/MV5BNTU1MzgyMDMtMzBlZS00YzczLThmYWEtMjU3YmFlOWEyMjE1XkEyXkFqcGc@._V1_SX300.jpg" ;
-    schema-movie:name "Harry Potter and the Sorcerer's Stone" ;
-    schema-movie:releaseDate "2001" .
+<http://projet-web-sem-cinema.org/movies/tt0241527> schema-creative-work:datePublished "2001" ;
+    schema-creative-work:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BNTU1MzgyMDMtMzBlZS00YzczLThmYWEtMjU3YmFlOWEyMjE1XkEyXkFqcGc@._V1_SX300.jpg" ;
+    schema-thing:name "Harry Potter and the Sorcerer's Stone" .
 
-<http://projet-web-sem-cinema.org/movies/tt0295297> schema-movie:image "https://m.media-amazon.com/images/M/MV5BNGJhM2M2MWYtZjIzMC00MDZmLThkY2EtOWViMDhhYjRhMzk4XkEyXkFqcGc@._V1_SX300.jpg" ;
-    schema-movie:name "Harry Potter and the Chamber of Secrets" ;
-    schema-movie:releaseDate "2002" .
+<http://projet-web-sem-cinema.org/movies/tt0295297> schema-creative-work:datePublished "2002" ;
+    schema-creative-work:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BNGJhM2M2MWYtZjIzMC00MDZmLThkY2EtOWViMDhhYjRhMzk4XkEyXkFqcGc@._V1_SX300.jpg" ;
+    schema-thing:name "Harry Potter and the Chamber of Secrets" .
 
-<http://projet-web-sem-cinema.org/movies/tt0304141> schema-movie:image "https://m.media-amazon.com/images/M/MV5BMTY4NTIwODg0N15BMl5BanBnXkFtZTcwOTc0MjEzMw@@._V1_SX300.jpg" ;
-    schema-movie:name "Harry Potter and the Prisoner of Azkaban" ;
-    schema-movie:releaseDate "2004" .
+<http://projet-web-sem-cinema.org/movies/tt0304141> schema-creative-work:datePublished "2004" ;
+    schema-creative-work:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMTY4NTIwODg0N15BMl5BanBnXkFtZTcwOTc0MjEzMw@@._V1_SX300.jpg" ;
+    schema-thing:name "Harry Potter and the Prisoner of Azkaban" .
 
-<http://projet-web-sem-cinema.org/movies/tt0330373> schema-movie:image "https://m.media-amazon.com/images/M/MV5BMTI1NDMyMjExOF5BMl5BanBnXkFtZTcwOTc4MjQzMQ@@._V1_SX300.jpg" ;
-    schema-movie:name "Harry Potter and the Goblet of Fire" ;
-    schema-movie:releaseDate "2005" .
+<http://projet-web-sem-cinema.org/movies/tt0330373> schema-creative-work:datePublished "2005" ;
+    schema-creative-work:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMTI1NDMyMjExOF5BMl5BanBnXkFtZTcwOTc4MjQzMQ@@._V1_SX300.jpg" ;
+    schema-thing:name "Harry Potter and the Goblet of Fire" .
 
-<http://projet-web-sem-cinema.org/movies/tt0373889> schema-movie:image "https://m.media-amazon.com/images/M/MV5BYWJmM2M1YzItMjY1Ni00YzRmLTg5YWYtNDFmNTJjNzQ0ODkyXkEyXkFqcGc@._V1_SX300.jpg" ;
-    schema-movie:name "Harry Potter and the Order of the Phoenix" ;
-    schema-movie:releaseDate "2007" .
+<http://projet-web-sem-cinema.org/movies/tt0373889> schema-creative-work:datePublished "2007" ;
+    schema-creative-work:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BYWJmM2M1YzItMjY1Ni00YzRmLTg5YWYtNDFmNTJjNzQ0ODkyXkEyXkFqcGc@._V1_SX300.jpg" ;
+    schema-thing:name "Harry Potter and the Order of the Phoenix" .
 
-<http://projet-web-sem-cinema.org/movies/tt0417741> schema-movie:image "https://m.media-amazon.com/images/M/MV5BNzU3NDg4NTAyNV5BMl5BanBnXkFtZTcwOTg2ODg1Mg@@._V1_SX300.jpg" ;
-    schema-movie:name "Harry Potter and the Half-Blood Prince" ;
-    schema-movie:releaseDate "2009" .
+<http://projet-web-sem-cinema.org/movies/tt0417741> schema-creative-work:datePublished "2009" ;
+    schema-creative-work:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BNzU3NDg4NTAyNV5BMl5BanBnXkFtZTcwOTg2ODg1Mg@@._V1_SX300.jpg" ;
+    schema-thing:name "Harry Potter and the Half-Blood Prince" .
 
-<http://projet-web-sem-cinema.org/movies/tt0926084> schema-movie:image "https://m.media-amazon.com/images/M/MV5BMTQ2OTE1Mjk0N15BMl5BanBnXkFtZTcwODE3MDAwNA@@._V1_SX300.jpg" ;
-    schema-movie:name "Harry Potter and the Deathly Hallows: Part 1" ;
-    schema-movie:releaseDate "2010" .
+<http://projet-web-sem-cinema.org/movies/tt0926084> schema-creative-work:datePublished "2010" ;
+    schema-creative-work:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMTQ2OTE1Mjk0N15BMl5BanBnXkFtZTcwODE3MDAwNA@@._V1_SX300.jpg" ;
+    schema-thing:name "Harry Potter and the Deathly Hallows: Part 1" .
 
-<http://projet-web-sem-cinema.org/movies/tt1201607> schema-movie:image "https://m.media-amazon.com/images/M/MV5BOTA1Mzc2N2ItZWRiNS00MjQzLTlmZDQtMjU0NmY1YWRkMGQ4XkEyXkFqcGc@._V1_SX300.jpg" ;
-    schema-movie:name "Harry Potter and the Deathly Hallows: Part 2" ;
-    schema-movie:releaseDate "2011" .
+<http://projet-web-sem-cinema.org/movies/tt1201607> schema-creative-work:datePublished "2011" ;
+    schema-creative-work:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BOTA1Mzc2N2ItZWRiNS00MjQzLTlmZDQtMjU0NmY1YWRkMGQ4XkEyXkFqcGc@._V1_SX300.jpg" ;
+    schema-thing:name "Harry Potter and the Deathly Hallows: Part 2" .
 

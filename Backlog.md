@@ -12,6 +12,7 @@
 
 ## Tasks To Do
 
+- [ ] Création d'une ontologie "CreativeWorkSeries" pour représenter les séries
 - [ ] Récupération de plus de données depuis l'API `OMDb API` au format `JSON`
 - [ ] Trouver de nouvelles sources de données pour enrichir le triplestore
 - [ ] Créer un graphe RDF plus complexe avec les nouvelles données (fusionner les ontologies)

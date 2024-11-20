@@ -14,6 +14,7 @@ import requests
 
 from graph_rdf import add_movies_from_json_api_to_rdf_graph, get_rdf_graph, serialized_rdf_n_triples
 from fuseki import insert_n_triples_data_in_triplestore
+from save_triplet import save_triples_rdf_graph
 from save_turtle import save_turtle_rdf_graph
 from save_json import save_json_data
 from conf import url_omdb_api
@@ -52,6 +53,9 @@ save_turtle_rdf_graph(get_rdf_graph())
 
 # Sérialiser les triplets en format N-Triples
 n_triples_data = serialized_rdf_n_triples()
+
+# Sauvegarder le fichier N-Triples dans un fichier N-Triples
+save_triples_rdf_graph(n_triples_data)
 
 ######################
 #       FUSEKI       #

@@ -1,0 +1,30 @@
+<http://projet-web-sem-cinema.org/movies/tt0926084> <https://schema.org/Thing/name> "Harry Potter and the Deathly Hallows: Part 1" .
+<http://projet-web-sem-cinema.org/movies/tt0295297> <https://schema.org/CreativeWork/datePublished> "2002" .
+<http://projet-web-sem-cinema.org/movies/tt0373889> <https://schema.org/CreativeWork/datePublished> "2007" .
+<http://projet-web-sem-cinema.org/movies/tt0417741> <https://schema.org/CreativeWork/thumbnailUrl> "https://m.media-amazon.com/images/M/MV5BNzU3NDg4NTAyNV5BMl5BanBnXkFtZTcwOTg2ODg1Mg@@._V1_SX300.jpg" .
+<http://projet-web-sem-cinema.org/movies/tt0241527> <https://schema.org/Thing/name> "Harry Potter and the Sorcerer's Stone" .
+<http://projet-web-sem-cinema.org/movies/tt1201607> <https://schema.org/Thing/name> "Harry Potter and the Deathly Hallows: Part 2" .
+<http://projet-web-sem-cinema.org/movies/tt0304141> <https://schema.org/CreativeWork/datePublished> "2004" .
+<http://projet-web-sem-cinema.org/movies/tt0241527> <https://schema.org/CreativeWork/thumbnailUrl> "https://m.media-amazon.com/images/M/MV5BNTU1MzgyMDMtMzBlZS00YzczLThmYWEtMjU3YmFlOWEyMjE1XkEyXkFqcGc@._V1_SX300.jpg" .
+<http://projet-web-sem-cinema.org/movies/tt0098635> <https://schema.org/CreativeWork/datePublished> "1989" .
+<http://projet-web-sem-cinema.org/movies/tt0241527> <https://schema.org/CreativeWork/datePublished> "2001" .
+<http://projet-web-sem-cinema.org/movies/tt0417741> <https://schema.org/Thing/name> "Harry Potter and the Half-Blood Prince" .
+<http://projet-web-sem-cinema.org/movies/tt0295297> <https://schema.org/CreativeWork/thumbnailUrl> "https://m.media-amazon.com/images/M/MV5BNGJhM2M2MWYtZjIzMC00MDZmLThkY2EtOWViMDhhYjRhMzk4XkEyXkFqcGc@._V1_SX300.jpg" .
+<http://projet-web-sem-cinema.org/movies/tt0330373> <https://schema.org/Thing/name> "Harry Potter and the Goblet of Fire" .
+<http://projet-web-sem-cinema.org/movies/tt0304141> <https://schema.org/CreativeWork/thumbnailUrl> "https://m.media-amazon.com/images/M/MV5BMTY4NTIwODg0N15BMl5BanBnXkFtZTcwOTc0MjEzMw@@._V1_SX300.jpg" .
+<http://projet-web-sem-cinema.org/movies/tt0373889> <https://schema.org/Thing/name> "Harry Potter and the Order of the Phoenix" .
+<http://projet-web-sem-cinema.org/movies/tt0066999> <https://schema.org/CreativeWork/thumbnailUrl> "https://m.media-amazon.com/images/M/MV5BYzNmOWVjN2ItMTQzOS00MTI4LTgxZDItMmZjNTVlMjY5Mjc1XkEyXkFqcGc@._V1_SX300.jpg" .
+<http://projet-web-sem-cinema.org/movies/tt0417741> <https://schema.org/CreativeWork/datePublished> "2009" .
+<http://projet-web-sem-cinema.org/movies/tt0066999> <https://schema.org/CreativeWork/datePublished> "1971" .
+<http://projet-web-sem-cinema.org/movies/tt1201607> <https://schema.org/CreativeWork/datePublished> "2011" .
+<http://projet-web-sem-cinema.org/movies/tt0098635> <https://schema.org/CreativeWork/thumbnailUrl> "https://m.media-amazon.com/images/M/MV5BMjE0ODEwNjM2NF5BMl5BanBnXkFtZTcwMjU2Mzg3NA@@._V1_SX300.jpg" .
+<http://projet-web-sem-cinema.org/movies/tt0373889> <https://schema.org/CreativeWork/thumbnailUrl> "https://m.media-amazon.com/images/M/MV5BYWJmM2M1YzItMjY1Ni00YzRmLTg5YWYtNDFmNTJjNzQ0ODkyXkEyXkFqcGc@._V1_SX300.jpg" .
+<http://projet-web-sem-cinema.org/movies/tt0926084> <https://schema.org/CreativeWork/datePublished> "2010" .
+<http://projet-web-sem-cinema.org/movies/tt1201607> <https://schema.org/CreativeWork/thumbnailUrl> "https://m.media-amazon.com/images/M/MV5BOTA1Mzc2N2ItZWRiNS00MjQzLTlmZDQtMjU0NmY1YWRkMGQ4XkEyXkFqcGc@._V1_SX300.jpg" .
+<http://projet-web-sem-cinema.org/movies/tt0304141> <https://schema.org/Thing/name> "Harry Potter and the Prisoner of Azkaban" .
+<http://projet-web-sem-cinema.org/movies/tt0295297> <https://schema.org/Thing/name> "Harry Potter and the Chamber of Secrets" .
+<http://projet-web-sem-cinema.org/movies/tt0330373> <https://schema.org/CreativeWork/datePublished> "2005" .
+<http://projet-web-sem-cinema.org/movies/tt0330373> <https://schema.org/CreativeWork/thumbnailUrl> "https://m.media-amazon.com/images/M/MV5BMTI1NDMyMjExOF5BMl5BanBnXkFtZTcwOTc4MjQzMQ@@._V1_SX300.jpg" .
+<http://projet-web-sem-cinema.org/movies/tt0926084> <https://schema.org/CreativeWork/thumbnailUrl> "https://m.media-amazon.com/images/M/MV5BMTQ2OTE1Mjk0N15BMl5BanBnXkFtZTcwODE3MDAwNA@@._V1_SX300.jpg" .
+<http://projet-web-sem-cinema.org/movies/tt0098635> <https://schema.org/Thing/name> "When Harry Met Sally..." .
+<http://projet-web-sem-cinema.org/movies/tt0066999> <https://schema.org/Thing/name> "Dirty Harry" .

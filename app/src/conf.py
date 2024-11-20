@@ -14,8 +14,14 @@ os.makedirs("../files/turtle", exist_ok=True)
 ######################
 
 # Ontologie
-ontologie_schema_org = "https://schema.org/Movie"
-ontologie_schema_prefix = "schema-movie"
+ontologie_schema_org_movie = "https://schema.org/Movie/"
+ontologie_schema_prefix_movie = "schema-movie"
+
+ontologie_schema_org_creative_work = "https://schema.org/CreativeWork/"
+ontologie_schema_prefix_creative_work = "schema-creative-work"
+
+ontologie_schema_org_thing = "https://schema.org/Thing/"
+ontologie_schema_prefix_thing = "schema-thing"
 
 # Fuseki
 fuseki_url = "http://localhost:3030/movies/update"
@@ -28,7 +34,7 @@ name_api = "omdb"
 omdb_api_key = "eaf9aada"
 type_data = "movie"
 key_word = "Harry"
-page_nb = 1
+page_nb = 2
 
 # Rechercher les films à la "page" spécifiée avec "keyword" dans le titre
 url_omdb_api = f"http://www.omdbapi.com/?apikey={omdb_api_key}&s={key_word}&page={page_nb}"

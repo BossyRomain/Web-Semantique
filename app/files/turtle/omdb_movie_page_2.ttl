@@ -1,42 +1,43 @@
-@prefix schema-movie: <https://schema.org/Movie> .
+@prefix schema-creative-work: <https://schema.org/CreativeWork/> .
+@prefix schema-thing: <https://schema.org/Thing/> .
 
-<http://projet-web-sem-cinema.org/movies/tt0048750> schema-movie:image "https://m.media-amazon.com/images/M/MV5BY2JmZWE4MjgtNmRiOS00ZDY1LTkyMWQtZDkyMjFiZTc1M2M4XkEyXkFqcGc@._V1_SX300.jpg" ;
-    schema-movie:name "The Trouble with Harry" ;
-    schema-movie:releaseDate "1955" .
+<http://projet-web-sem-cinema.org/movies/tt0048750> schema-creative-work:datePublished "1955" ;
+    schema-creative-work:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BY2JmZWE4MjgtNmRiOS00ZDY1LTkyMWQtZDkyMjFiZTc1M2M4XkEyXkFqcGc@._V1_SX300.jpg" ;
+    schema-thing:name "The Trouble with Harry" .
 
-<http://projet-web-sem-cinema.org/movies/tt0093148> schema-movie:image "https://m.media-amazon.com/images/M/MV5BZTk4NmJmN2UtZGJmZS00NWU1LWJmY2ItNWMxMmMxN2JhYTE2XkEyXkFqcGc@._V1_SX300.jpg" ;
-    schema-movie:name "Harry and the Hendersons" ;
-    schema-movie:releaseDate "1987" .
+<http://projet-web-sem-cinema.org/movies/tt0093148> schema-creative-work:datePublished "1987" ;
+    schema-creative-work:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BZTk4NmJmN2UtZGJmZS00NWU1LWJmY2ItNWMxMmMxN2JhYTE2XkEyXkFqcGc@._V1_SX300.jpg" ;
+    schema-thing:name "Harry and the Hendersons" .
 
-<http://projet-web-sem-cinema.org/movies/tt0098645> schema-movie:image "https://m.media-amazon.com/images/M/MV5BY2UxNGJhNjQtZjZhOS00ZTQyLTk4NTQtYjdkZjQyNmU2YjJhXkEyXkFqcGc@._V1_SX300.jpg" ;
-    schema-movie:name "Who's Harry Crumb?" ;
-    schema-movie:releaseDate "1989" .
+<http://projet-web-sem-cinema.org/movies/tt0098645> schema-creative-work:datePublished "1989" ;
+    schema-creative-work:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BY2UxNGJhNjQtZjZhOS00ZTQyLTk4NTQtYjdkZjQyNmU2YjJhXkEyXkFqcGc@._V1_SX300.jpg" ;
+    schema-thing:name "Who's Harry Crumb?" .
 
-<http://projet-web-sem-cinema.org/movies/tt0118954> schema-movie:image "https://m.media-amazon.com/images/M/MV5BNDEyMzNhZTQtMmJkNC00ZWRkLWE1YjEtNzRkZGY5YWFiZmVjXkEyXkFqcGc@._V1_SX300.jpg" ;
-    schema-movie:name "Deconstructing Harry" ;
-    schema-movie:releaseDate "1997" .
+<http://projet-web-sem-cinema.org/movies/tt0118954> schema-creative-work:datePublished "1997" ;
+    schema-creative-work:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BNDEyMzNhZTQtMmJkNC00ZWRkLWE1YjEtNzRkZGY5YWFiZmVjXkEyXkFqcGc@._V1_SX300.jpg" ;
+    schema-thing:name "Deconstructing Harry" .
 
-<http://projet-web-sem-cinema.org/movies/tt0216800> schema-movie:image "https://m.media-amazon.com/images/M/MV5BMTgxMTE4MTYzNl5BMl5BanBnXkFtZTYwNTE4OTI5._V1_SX300.jpg" ;
-    schema-movie:name "With a Friend Like Harry..." ;
-    schema-movie:releaseDate "2000" .
+<http://projet-web-sem-cinema.org/movies/tt0216800> schema-creative-work:datePublished "2000" ;
+    schema-creative-work:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMTgxMTE4MTYzNl5BMl5BanBnXkFtZTYwNTE4OTI5._V1_SX300.jpg" ;
+    schema-thing:name "With a Friend Like Harry..." .
 
-<http://projet-web-sem-cinema.org/movies/tt0329028> schema-movie:image "https://m.media-amazon.com/images/M/MV5BNjgzOTE0YmItODkzZi00MmVhLWE5NzAtMjExN2NmYjUxNDYwXkEyXkFqcGc@._V1_SX300.jpg" ;
-    schema-movie:name "Dumb and Dumberer: When Harry Met Lloyd" ;
-    schema-movie:releaseDate "2003" .
+<http://projet-web-sem-cinema.org/movies/tt0329028> schema-creative-work:datePublished "2003" ;
+    schema-creative-work:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BNjgzOTE0YmItODkzZi00MmVhLWE5NzAtMjExN2NmYjUxNDYwXkEyXkFqcGc@._V1_SX300.jpg" ;
+    schema-thing:name "Dumb and Dumberer: When Harry Met Lloyd" .
 
-<http://projet-web-sem-cinema.org/movies/tt1289406> schema-movie:image "https://m.media-amazon.com/images/M/MV5BMTM5NjE2NzI2Ml5BMl5BanBnXkFtZTcwNDY0ODUyMw@@._V1_SX300.jpg" ;
-    schema-movie:name "Harry Brown" ;
-    schema-movie:releaseDate "2009" .
+<http://projet-web-sem-cinema.org/movies/tt1289406> schema-creative-work:datePublished "2009" ;
+    schema-creative-work:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMTM5NjE2NzI2Ml5BMl5BanBnXkFtZTcwNDY0ODUyMw@@._V1_SX300.jpg" ;
+    schema-thing:name "Harry Brown" .
 
-<http://projet-web-sem-cinema.org/movies/tt16116174> schema-movie:image "https://m.media-amazon.com/images/M/MV5BZTNhNjg1NWItZThkNC00N2JiLTkzOTgtNzZjYzAyYTQ4OTEwXkEyXkFqcGc@._V1_SX300.jpg" ;
-    schema-movie:name "Harry Potter 20th Anniversary: Return to Hogwarts" ;
-    schema-movie:releaseDate "2022" .
+<http://projet-web-sem-cinema.org/movies/tt16116174> schema-creative-work:datePublished "2022" ;
+    schema-creative-work:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BZTNhNjg1NWItZThkNC00N2JiLTkzOTgtNzZjYzAyYTQ4OTEwXkEyXkFqcGc@._V1_SX300.jpg" ;
+    schema-thing:name "Harry Potter 20th Anniversary: Return to Hogwarts" .
 
-<http://projet-web-sem-cinema.org/movies/tt23900194> schema-movie:image "https://m.media-amazon.com/images/M/MV5BYzE4YjY4NWEtMTJlMC00MjczLWE1ZmEtYmE0YTI4ZjViNWQ1XkEyXkFqcGc@._V1_SX300.jpg" ;
-    schema-movie:name "Harry & Meghan" ;
-    schema-movie:releaseDate "2022" .
+<http://projet-web-sem-cinema.org/movies/tt23900194> schema-creative-work:datePublished "2022" ;
+    schema-creative-work:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BYzE4YjY4NWEtMTJlMC00MjczLWE1ZmEtYmE0YTI4ZjViNWQ1XkEyXkFqcGc@._V1_SX300.jpg" ;
+    schema-thing:name "Harry & Meghan" .
 
-<http://projet-web-sem-cinema.org/movies/tt5997666> schema-movie:image "https://m.media-amazon.com/images/M/MV5BMjIzMDI2NDUwOV5BMl5BanBnXkFtZTgwNzE2NjU3MjI@._V1_SX300.jpg" ;
-    schema-movie:name "Jab Harry Met Sejal" ;
-    schema-movie:releaseDate "2017" .
+<http://projet-web-sem-cinema.org/movies/tt5997666> schema-creative-work:datePublished "2017" ;
+    schema-creative-work:thumbnailUrl "https://m.media-amazon.com/images/M/MV5BMjIzMDI2NDUwOV5BMl5BanBnXkFtZTgwNzE2NjU3MjI@._V1_SX300.jpg" ;
+    schema-thing:name "Jab Harry Met Sejal" .
 
