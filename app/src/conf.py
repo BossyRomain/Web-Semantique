@@ -14,11 +14,11 @@ os.makedirs("../files/turtle", exist_ok=True)
 ######################
 
 # Ontologie
-ontologie_schema_org = "http://schema.org/"
-ontologie_schema_prefix = "schema"
+ontologie_schema_org = "https://schema.org/Movie"
+ontologie_schema_prefix = "schema-movie"
 
 # Fuseki
-fuseki_url = "http://localhost:3030/films/update"
+fuseki_url = "http://localhost:3030/movies/update"
 
 ######################
 #      OMDB API      #

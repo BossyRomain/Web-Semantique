@@ -46,9 +46,6 @@ def add_movie_to_rdf_graph(movie):
     # Ajouter le nom du film
     graph.add((movie_uri, schema.name, Literal(movie["Title"])))
 
-    # Ajouter le type du film
-    graph.add((movie_uri, RDF.type, schema.Movie))
-
     # Ajouter la date de sortie du film
     graph.add((movie_uri, schema.releaseDate, Literal(movie["Year"])))
 

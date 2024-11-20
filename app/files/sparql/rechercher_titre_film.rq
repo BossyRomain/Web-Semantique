@@ -1,0 +1,6 @@
+SELECT ?Film_URI ?Titre
+WHERE {
+  ?Film_URI a <http://schema.org/Movie> .
+  ?Film_URI <http://schema.org/name> ?Titre .
+  FILTER(CONTAINS(LCASE(?Titre), "harry potter"))
+}

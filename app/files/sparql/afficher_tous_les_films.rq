@@ -1,0 +1,7 @@
+SELECT ?Film_URI ?Titre ?Date_de_sortie ?Affiche
+WHERE {
+  ?Film_URI a <http://schema.org/Movie> .
+  ?Film_URI <http://schema.org/name> ?Titre .
+  ?Film_URI <http://schema.org/releaseDate> ?Date_de_sortie .
+  ?Film_URI <http://schema.org/image> ?Affiche .
+}
