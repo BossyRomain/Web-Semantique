@@ -37,7 +37,7 @@ name_api = "omdb"
 omdb_api_key = "eaf9aada"
 type_data = "movie"
 key_word = "Harry"
-page_nb = 2
+page_nb = 1
 
 # Rechercher les films à la "page" spécifiée avec "keyword" dans le titre
 url_omdb_api = f"http://www.omdbapi.com/?apikey={omdb_api_key}&s={key_word}&page={page_nb}"
