@@ -61,15 +61,20 @@ def add_movie_to_rdf_graph(movie):
 
 
 def add_movies_crews_from_json_api_to_rdf_graph(json_result_api):
+    """
+    Ajoute les membres des équipes des films dans le graphe RDF
+    """
+
     for movie in json_result_api["Search"]:
-        add_movie_crew_to_rdf(movie)
+        crew = get_movie_crew(movie)
+        add_movie_crew_to_rdf(crew)
 
 
-def add_movie_crew_to_rdf(movie):
+def add_movie_crew_to_rdf(crew):
     """
-    Ajoute l'équipe d'un film dans le graphe RDF
+    Ajoute les memebres de l'équipe d'un film dans le graphe RDF
     """
-    for person in get_movie_crew(movie):
+    for person in crew:
         add_person_to_rdf(person)
 
 
@@ -77,13 +82,13 @@ def add_person_to_rdf(person):
     """
     Ajoute une personne dans le graphe RDF
     """
-    person_uri = URIRef(f"{url_themoviedb_api}person/{person['id']}")
+    person_uri = URIRef(f"{url_themoviedb_api}/person/{person['id']}")
 
-    graph.add((person_uri, schema_person.name, person['name']))
+    graph.add((person_uri, schema_person.name, Literal(person['name'])))
 
-    graph.add((person_uri, schema_person.birthDate, person['birthday']))
+    graph.add((person_uri, schema_person.birthDate, Literal(person['birthday'])))
 
-    graph.add((person_uri, schema_person.birthPlace, person['place_of_birth']))
+    graph.add((person_uri, schema_person.birthPlace, Literal(person['place_of_birth'])))
 
 
 def serialized_rdf_n_triples():

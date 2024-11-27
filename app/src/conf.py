@@ -46,7 +46,7 @@ url_omdb_api = f"http://www.omdbapi.com/?apikey={omdb_api_key}&s={key_word}&page
 #  The Movie DB API  #
 ######################
 
-themovedb_api_key = "cc3adef3826285c96e65cbd79fffa82e"
+themoviedb_api_key = "cc3adef3826285c96e65cbd79fffa82e"
 
 # Rechercher les personnes qui ont travaillé sur le film
-url_themoviedb_api = f'https://api.themoviedb.org/3/'
+url_themoviedb_api = f'https://api.themoviedb.org/3'
