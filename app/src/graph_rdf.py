@@ -67,17 +67,38 @@ def add_movies_crews_from_json_api_to_rdf_graph(json_result_api):
     if json_result_api["Response"] == "True":
         for movie in json_result_api["Search"]:
             crew = get_movie_crew(movie)
-            add_crew_to_rdf(crew)
+            add_crew_to_rdf(crew, movie["imdbID"])
     else:
         print("[ERREUR] Aucun film trouvé dans le fichier json reçu de l'API")
 
 
-def add_crew_to_rdf(crew):
+def add_crew_to_rdf(crew, movie_imdb_id):
     """
     Ajoute les membres de l'équipe d'un film dans le graphe RDF
     """
     for person in crew:
+        # Ajout d'un membre'
         add_person_to_rdf(person)
+
+        # Ajout du rôle du membre pour le film
+        movie_uri = URIRef(f"http://projet-web-sem-cinema.org/movies/{movie_imdb_id}")
+
+        person_uri = URIRef(f"{url_themoviedb_api}/person/{person['id']}")
+
+        match person['job']:
+            case "actor":
+                graph.add((movie_uri, schema_movie.actor, person_uri))
+
+            case "director":
+                graph.add((movie_uri, schema_movie.director, person_uri))
+            
+            case "producer":
+                graph.add((movie_uri, schema_movie.producer, person_uri))
+            
+            case "editor":
+                graph.add((movie_uri, schema_movie.editor, person_uri))
+        
+
 
 
 def add_person_to_rdf(person):
