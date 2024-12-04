@@ -5,7 +5,7 @@ Module de création d'un graphe RDF pour stocker les données d'une ontologie
 from rdflib import Graph, URIRef, Literal, Namespace
 from rdflib.namespace import RDF
 
-from conf import ontologie_schema_org_movie, ontologie_schema_prefix_movie, ontologie_schema_org_creative_work, ontologie_schema_prefix_creative_work, ontologie_schema_org_thing, ontologie_schema_prefix_thing, url_themoviedb_api, onthologie_schema_org_person, onthologie_schema_prefix_person
+from conf import ontologie_schema_org_movie, ontologie_schema_prefix_movie, ontologie_schema_org_creative_work, ontologie_schema_prefix_creative_work, ontologie_schema_org_thing, ontologie_schema_prefix_thing, url_themoviedb_api, onthologie_schema_org_person, onthologie_schema_prefix_person, prefif_projet_web_sem, projet_web_sem
 from api import get_movie_crew
 
 # Initialisation du graphe RDF
@@ -16,12 +16,14 @@ schema_movie = Namespace(ontologie_schema_org_movie)
 schema_creative_work = Namespace(ontologie_schema_org_creative_work)
 schema_thing = Namespace(ontologie_schema_org_thing)
 schema_person = Namespace(onthologie_schema_org_person)
+schema_projet_web_sem = Namespace(projet_web_sem)
 
 # Liaison des préfixes aux ontologies (pour passer de 'http://schema.org/Movie/' à 'schema-movie')
 graph.bind(ontologie_schema_prefix_movie, schema_movie)
 graph.bind(ontologie_schema_prefix_creative_work, schema_creative_work)
 graph.bind(ontologie_schema_prefix_thing, schema_thing)
 graph.bind(onthologie_schema_prefix_person, schema_person)
+graph.bind(prefif_projet_web_sem, schema_projet_web_sem)
 
 def get_rdf_graph():
     """
@@ -83,7 +85,7 @@ def add_crew_to_rdf(crew, movie_imdb_id):
         # Ajout du rôle du membre pour le film
         movie_uri = URIRef(f"http://projet-web-sem-cinema.org/movies/{movie_imdb_id}")
 
-        person_uri = URIRef(f"{url_themoviedb_api}/person/{person['id']}")
+        person_uri = person_uri = URIRef(f"http://projet-web-sem-cinema.org/persons/{person['id']}")
 
         match person['job']:
             case "actor":
@@ -105,9 +107,9 @@ def add_person_to_rdf(person):
     """
     Ajoute une personne dans le graphe RDF
     """
-    person_uri = URIRef(f"{url_themoviedb_api}/person/{person['id']}")
+    person_uri = person_uri = URIRef(f"http://projet-web-sem-cinema.org/persons/{person['id']}")
 
-    graph.add((person_uri, schema_person.name, Literal(person['name'])))
+    graph.add((person_uri, schema_thing.name, Literal(person['name'])))
 
     graph.add((person_uri, schema_person.birthDate, Literal(person['birthday'])))
 

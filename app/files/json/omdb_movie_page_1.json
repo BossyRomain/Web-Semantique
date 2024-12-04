@@ -15,18 +15,18 @@
             "Poster": "https://m.media-amazon.com/images/M/MV5BNTU1MzgyMDMtMzBlZS00YzczLThmYWEtMjU3YmFlOWEyMjE1XkEyXkFqcGc@._V1_SX300.jpg"
         },
         {
-            "Title": "Harry Potter and the Prisoner of Azkaban",
-            "Year": "2004",
-            "imdbID": "tt0304141",
-            "Type": "movie",
-            "Poster": "https://m.media-amazon.com/images/M/MV5BMTY4NTIwODg0N15BMl5BanBnXkFtZTcwOTc0MjEzMw@@._V1_SX300.jpg"
-        },
-        {
             "Title": "Harry Potter and the Chamber of Secrets",
             "Year": "2002",
             "imdbID": "tt0295297",
             "Type": "movie",
             "Poster": "https://m.media-amazon.com/images/M/MV5BNGJhM2M2MWYtZjIzMC00MDZmLThkY2EtOWViMDhhYjRhMzk4XkEyXkFqcGc@._V1_SX300.jpg"
+        },
+        {
+            "Title": "Harry Potter and the Prisoner of Azkaban",
+            "Year": "2004",
+            "imdbID": "tt0304141",
+            "Type": "movie",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BMTY4NTIwODg0N15BMl5BanBnXkFtZTcwOTc0MjEzMw@@._V1_SX300.jpg"
         },
         {
             "Title": "Harry Potter and the Goblet of Fire",

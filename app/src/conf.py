@@ -23,8 +23,12 @@ ontologie_schema_prefix_creative_work = "schema-creative-work"
 ontologie_schema_org_thing = "https://schema.org/Thing/"
 ontologie_schema_prefix_thing = "schema-thing"
 
-onthologie_schema_org_person = "https://schema.org/Person"
+onthologie_schema_org_person = "https://schema.org/Person/"
 onthologie_schema_prefix_person = "schema-person"
+
+# Préfixes
+projet_web_sem = "https://projet-web-sem-cinema.org/"
+prefif_projet_web_sem = "projet-web-sem"
 
 # Fuseki
 fuseki_url = "http://localhost:3030/movies/update"

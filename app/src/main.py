@@ -33,6 +33,8 @@ response_omdb_api = requests.get(url_omdb_api)
 # Sauvegarder les données dans un fichier json
 json_result_api = save_json_data(response_omdb_api)
 
+
+
 ######################
 #      GRAPH RDF     #
 ######################

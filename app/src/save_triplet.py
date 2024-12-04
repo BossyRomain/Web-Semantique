@@ -13,5 +13,5 @@ def save_triples_rdf_graph(n_triples_data):
     triples_file_name = "../files/triples/" + name_api + "_" + type_data + "_page_" + str(page_nb) + ".nt"
 
     # Sauvegarder le fichier N-Triples dans le dossier 'app/files/triples'
-    with open(triples_file_name, "w") as file:
+    with open(triples_file_name, "w", encoding="utf-8") as file:
         file.write(n_triples_data)

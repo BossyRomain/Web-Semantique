@@ -18,7 +18,7 @@ def save_json_data(response_api):
     json_file_name = "../files/json/" + name_api + "_" + type_data + "_page_" + str(page_nb) + ".json"
 
     # Sauvegarder le fichier json dans le dossier 'app/files/json'
-    with open(json_file_name, "w") as file:
+    with open(json_file_name, "w", encoding="utf-8") as file:
         json.dump(json_data_api, file)
 
     return json_data_api
