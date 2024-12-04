@@ -8,6 +8,7 @@ import os
 os.makedirs("../files", exist_ok=True)
 os.makedirs("../files/json", exist_ok=True)
 os.makedirs("../files/turtle", exist_ok=True)
+os.makedirs("../files/triples", exist_ok=True)
 
 ######################
 #    CONFIGURATION   #
@@ -40,11 +41,11 @@ fuseki_url = "http://localhost:3030/movies/update"
 name_api = "omdb"
 omdb_api_key = "eaf9aada"
 type_data = "movie"
-key_word = "Harry"
+keywords =  ["Harry", "Seigneur", "Fast"]
 page_nb = 1
 
 # Rechercher les films à la "page" spécifiée avec "keyword" dans le titre
-url_omdb_api = f"http://www.omdbapi.com/?apikey={omdb_api_key}&s={key_word}&page={page_nb}"
+url_omdb_api = f"http://www.omdbapi.com/?apikey={omdb_api_key}"
 
 ######################
 #  The Movie DB API  #

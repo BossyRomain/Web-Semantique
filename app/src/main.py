@@ -17,33 +17,35 @@ from fuseki import insert_n_triples_data_in_triplestore
 from save_triplet import save_triples_rdf_graph
 from save_turtle import save_turtle_rdf_graph
 from save_json import save_json_data
-from conf import url_omdb_api
+from conf import url_omdb_api, keywords, page_nb
 
-######################
-#      OMDB API      #
-######################
+for keyword in keywords:
+    url = url_omdb_api + f"&s={keyword}&page={page_nb}"
 
-# Récupérer les données de l'API OMDB
-response_omdb_api = requests.get(url_omdb_api)
+    ######################
+    #      OMDB API      #
+    ######################
 
-######################
-#      JSON FILE     #
-######################
+    # Récupérer les données de l'API OMDB
+    response_omdb_api = requests.get(url)
+    print(keyword)
 
-# Sauvegarder les données dans un fichier json
-json_result_api = save_json_data(response_omdb_api)
+    ######################
+    #      JSON FILE     #
+    ######################
 
+    # Sauvegarder les données dans un fichier json
+    json_result_api = save_json_data(response_omdb_api)
 
+    ######################
+    #      GRAPH RDF     #
+    ######################
 
-######################
-#      GRAPH RDF     #
-######################
+    # Ajouter les films du fichier json au graphe RDF
+    add_movies_from_json_api_to_rdf_graph(json_result_api)
 
-# Ajouter les films du fichier json au graphe RDF
-add_movies_from_json_api_to_rdf_graph(json_result_api)
-
-# Ajouter les membres des équipes des films au graphe RDF
-add_movies_crews_from_json_api_to_rdf_graph(json_result_api)
+    # Ajouter les membres des équipes des films au graphe RDF   
+    add_movies_crews_from_json_api_to_rdf_graph(json_result_api)
 
 ######################
 #     TURTLE FILE    #

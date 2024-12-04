@@ -5,7 +5,7 @@ Module de création d'un graphe RDF pour stocker les données d'une ontologie
 from rdflib import Graph, URIRef, Literal, Namespace
 from rdflib.namespace import RDF
 
-from conf import ontologie_schema_org_movie, ontologie_schema_prefix_movie, ontologie_schema_org_creative_work, ontologie_schema_prefix_creative_work, ontologie_schema_org_thing, ontologie_schema_prefix_thing, url_themoviedb_api, onthologie_schema_org_person, onthologie_schema_prefix_person, prefif_projet_web_sem, projet_web_sem
+from conf import ontologie_schema_org_movie, ontologie_schema_prefix_movie, ontologie_schema_org_creative_work, ontologie_schema_prefix_creative_work, ontologie_schema_org_thing, ontologie_schema_prefix_thing, onthologie_schema_org_person, onthologie_schema_prefix_person, prefif_projet_web_sem, projet_web_sem
 from api import get_movie_crew
 
 # Initialisation du graphe RDF
