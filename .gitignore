@@ -162,4 +162,8 @@ cython_debug/
 #.idea/
 
 # Fuseki
-fuseki/apache-jena-fuseki-5.2.0/run/
+fuseki/
+
+.vscode/
+
+app/files/
