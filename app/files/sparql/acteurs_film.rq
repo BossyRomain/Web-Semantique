@@ -1,0 +1,15 @@
+# Retourne la liste des acteurs du film Harry Potter and the Sorcerer's Stone
+
+PREFIX schema: <https://schema.org/>
+PREFIX thing: <https://schema.org/Thing/>
+PREFIX movie: <https://schema.org/Movie/>
+
+SELECT DISTINCT ?Actor_URI ?Actor_Name
+WHERE {
+  ?Film_URI movie:actor ?Actor_URI .
+
+  ?Actor_URI thing:name ?Actor_Name .
+
+  ?Film_URI thing:name ?Film_Title .
+  FILTER(?Film_Title = "Harry Potter and the Sorcerer's Stone")
+}
