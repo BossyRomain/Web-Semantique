@@ -71,12 +71,6 @@ Plus précisément, nous avons utilisé les classes de `Shema.org` suivantes :
 
 Note : Il est important de noter que l'ontologie `Movie` est une sous-classe de `CreativeWork` et que `CreativeWork` et `Person` sont des sous-classes de `Thing`.
 
-1. Concevoir une Ontologie
-• Créer ou réutiliser une ontologie adaptée à votre domaine. Une ontologie définit les
-concepts et les relations dans un domaine donné, ce qui permet de donner du sens à
-vos données.
-• Utiliser des vocabulaires existants lorsque possible (comme FOAF, Dublin Core, ou
-Schema.org) pour garantir l'interopérabilité.
-• Création d’une ontologie : Si aucune ontologie ne convient, vous devrez en créer
-une, par exemple en utilisant Protégé, un outil de conception d'ontologies.
-• Outils utiles pour créer des ontologies : Protégé,  
+5. Peupler votre ontologie
+• Avec les données que vous avez nettoyées, créer un graphe RDF en utilisant le
+vocabulaire défini par votre ontologie.  
