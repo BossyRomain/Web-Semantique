@@ -29,7 +29,7 @@ Les fonctionnalités du projet sont les suivantes :
 │       └── cine-data.ttl
 ├── docs
 │   ├── projet-Web-Sem-2024-2025.pdf
-│   └── rapport.pdf
+│   └── rapport.md
 ├── fuseki
 │   └── apache-jena-fuseki-5.2.0
 ├── .gitignore

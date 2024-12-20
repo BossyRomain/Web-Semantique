@@ -1,3 +1,5 @@
+# Nombre de films dans la base de données
+
 SELECT (COUNT(?Film_URI) AS ?Nombre_de_films)
 WHERE {
   ?Film_URI a <http://schema.org/Movie> .

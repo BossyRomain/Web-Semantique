@@ -1,3 +1,5 @@
+# Afficher tous les films
+
 SELECT ?Film_URI ?Titre ?Date_de_sortie ?Affiche
 WHERE {
   ?Film_URI a <http://schema.org/Movie> .

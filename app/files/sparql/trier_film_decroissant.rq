@@ -1,3 +1,5 @@
+# Tri des films par date de sortie décroissante
+
 SELECT ?Film_URI ?Titre ?Date_de_sortie
 WHERE {
   ?Film_URI a <http://schema.org/Movie> .

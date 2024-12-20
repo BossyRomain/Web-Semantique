@@ -1,3 +1,5 @@
+# Recherche de films dont le titre contient "harry potter"
+
 SELECT ?Film_URI ?Titre
 WHERE {
   ?Film_URI a <http://schema.org/Movie> .
