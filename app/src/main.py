@@ -28,7 +28,8 @@ for keyword in keywords:
 
     # Récupérer les données de l'API OMDB
     response_omdb_api = requests.get(url)
-    print(keyword)
+    print("Importation des données en cours pour", keyword, "...")
+
 
     ######################
     #      JSON FILE     #
@@ -46,6 +47,8 @@ for keyword in keywords:
 
     # Ajouter les membres des équipes des films au graphe RDF   
     add_movies_crews_from_json_api_to_rdf_graph(json_result_api)
+
+    print("Importation des données terminée pour", keyword, "!\n")
 
 ######################
 #     TURTLE FILE    #
